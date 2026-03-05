@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسريب الاول - 𝐅𝐀𝐑𝐄𝐒</title>
+    <style>
+        body { 
+            background-color: #050000; 
+            color: #ff0000; 
+            font-family: 'Tahoma', sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            margin: 0; 
+        }
+        .header-title {
+            font-size: 4em;
+            font-weight: bold;
+            text-shadow: 0 0 20px #ff0000;
+            margin-bottom: 25px;
+            letter-spacing: 8px;
+        }
+        .image-frame {
+            position: relative;
+            width: 280px;
+            height: 280px;
+            border-radius: 25px;
+            padding: 5px;
+            background: linear-gradient(45deg, #ff0000, #220000);
+            box-shadow: 0 0 35px #ff0000;
+            animation: glow 1.5s infinite alternate;
+        }
+        .image-frame img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            display: block;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 15px #8b0000; transform: scale(1); }
+            to { box-shadow: 0 0 45px #ff0000, 0 0 10px #ffffff; transform: scale(1.02); }
+        }
+        .name-tag {
+            margin-top: 30px;
+            font-size: 3em;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 0 0 15px #ff0000;
+            letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-title">عـنـتـيـل المـحـلـه</div>
+    <div class="image-frame">
+        <img src="./images/fares.jpg" alt="𝐅𝐀𝐑𝐄𝐒">
+    </div>
+    <div class="name-tag">فارس</div>
+</body>
+</html>
+
